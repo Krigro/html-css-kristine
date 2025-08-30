@@ -78,7 +78,7 @@ justify-content: flex-end;
 
 /* Nav */
 .main-nav {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
@@ -92,6 +92,15 @@ justify-content: flex-end;
   text-decoration: none;
   color: #000;
   font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+  }
+  .hamburger {
+    display: none;
+  }
 }
 .main-nav a.outlet { color: rgb(224, 163, 50); font-weight: bold; font-size: 20px; }
 

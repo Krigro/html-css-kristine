@@ -78,7 +78,7 @@ justify-content: flex-end;
 
 /* Nav */
 .main-nav {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
@@ -87,6 +87,17 @@ justify-content: flex-end;
   border-bottom: 1px solid #ddd;
   padding: 10px;
 }
+
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+
+
 .main-nav a {
   padding: 15px 20px;
   text-decoration: none;
