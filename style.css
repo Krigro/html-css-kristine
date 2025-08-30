@@ -129,6 +129,7 @@ justify-content: flex-end;
     border-radius: 10px;
     text-align: center;
   }
+ 
 }
 
 @media (min-width: 768px) {
@@ -140,6 +141,10 @@ justify-content: flex-end;
 .hero h1 { 
   font-size: 30px; 
   margin-bottom: 20px; 
+  -webkit-text-stroke: 1px black;
+  background-color: #8080804D;
+  width: fit-content;
+  
 }
 .btn.big {
   padding: 15px 35px;
