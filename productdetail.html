@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Scott Shelljacket - RainyDays">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>RainyDays - Scott Shelljacket</title>
+  <link rel="stylesheet" href="proddetail.css">
+</head>
+<body>
+
+  <!-- header -->
+  <header class="header-top">
+    <div class="search">
+      <input type="text" placeholder="Search products....."><button aria-label="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <div class="logo">
+      <a href="./index.html"><img src="RainyDays_Logo.png" alt="RainyDays logo"></a>
+    </div>
+    <div class="user-actions">
+      <a href="#" class="login">Log in</a>
+    <a href="#" class="login"><i class="fa-solid fa-user"></i></a>
+    <label for="cart-toggle" class="login"><i class="fa-solid fa-cart-shopping"></i></label>
+    
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <a href="#"><strong>Men’s</strong></a>
+    <a href="#"><strong>Women’s</strong></a>
+    <a href="#"><strong>Kids</strong></a>
+    <a href="#"><strong>Accessories</strong></a>
+    <a href="#"><strong>Guide</strong></a>
+    <a href="#"><strong>Our hiking club</strong></a>
+    <a href="#" class="outlet"><strong>OUTLET</strong></a>
+  </nav>
+  
+
+  <main class="product-page">
+
+<!-- back to jackets -->
+<a href="./products.html" class="back-link">&larr; Back to jackets</a>
+
+<section class="product-detail">
+
+    <div class="product-image">
+      <img src="img/jakke1.png" alt="Scott shelljacket">
+    </div>
+
+    <div class="product-info">
+      <h1>Scott</h1>
+      <h2>Scott shelljacket</h2>
+      <div class="price">35.50€</div>
+
+      <p>
+        This lightweight grey shell jacket is perfect for staying comfortable in changing weather.
+        Made with durable, water-resistant fabric, it offers protection against wind and light rain.
+        Its simple design makes it easy to pair with anything, whether you're outdoors or running errands.
+      </p>
+
+      <ul>
+        <li>Lightweight &amp; durable</li>
+        <li>Water-resistant &amp; windproof</li>
+        <li>Simple, versatile grey design</li>
+      </ul>
+
+      <details>
+        <summary>See more details</summary> 
+        <p>
+            This Scott shelljacket is designed for outdoor enthusiasts who value both performance and simplicity. It features a lightweight yet durable fabric blend that allows for easy movement while maintaining protection against unpredictable weather. Breathable lining helps regulate body temperature during high activity. Adjustable cuffs and hem provide a personalized fit and keep out cold drafts. Compact and packable design makes it easy to stow away in your backpack. Reflective accents enhance visibility in low-light conditions, improving safety. Whether you're heading out for a morning run, a mountain hike, or just a casual walk in town, this versatile shelljacket is built to keep you comfortable and protected.
+        </p>
+      </details>
+
+      <div class="actions">
+        <select class="size-select">
+          <option>Pick a size</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+        <label for="cart-toggle"  class="btn add-to-cart">Add to cart <i class="fa-solid fa-cart-shopping"></i></label>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- You'd might also like -->
+  <section class="related">
+    <h3>You'd might also like</h3>
+    <div class="related-products">
+      <article>
+        <img src="img/jakke2.png" alt="Scott windjacket">
+      </article>
+      <article>
+        <img src="img/jakke3.png" alt="Grey shelljacket">
+      </article>
+      <article>
+        <img src="img/jakke4.jpg" alt="Scott thick shell jacket">
+      </article>
+    </div>
+  </section>
+
+</main>
+
+</section>
+
+  </main>
+
+  <!-- FOOTER -->
+   <footer>
+    <div class="footer-section">Free shipping over 50€</div>
+    <div class="footer-section"><a href="#">Customer support</a></div>
+    <div class="footer-section"><a href="#">Follow us <i class="fa-solid fa-thumbs-up"></i></a></div> 
+  </footer>
+
+<!-- CART TOGGLE -->
+<input type="checkbox" id="cart-toggle" class="cart-toggle">
+
+<!-- OVERLAY -->
+<label for="cart-toggle" class="cart-overlay"></label>
+
+<!-- CART PANEL -->
+<aside class="cart-panel">
+  <div class="cart-header">
+    <h2>Your shopping cart</h2>
+
+    <!-- X button -->
+    <label for="cart-toggle" class="close-btn">&times;</label>
+  </div>
+  <div class="cart-content">
+    <div class="cart-item">
+      <img src="img/jakke1.png" alt="Scott shelljacket">
+      <div>
+        <p>Scott shelljacket</p>
+        <p>Size: L</p>
+        <p>Quantity: 1</p>
+      </div>
+      <p class="price">35.50€</p>
+    </div>
+    <div class="subtotal">
+      <span>Subtotal:</span>
+      <span>35.50€</span>
+    </div>
+    <a href="./checkout.html" class="checkout-btn">Proceed to checkout</a>
+  </div>
+</aside>
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; color: #222;
+display: flex;
+flex-direction: column;
+min-height: 100vh; }
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Header */
+.header-top {
+display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.search {
+   flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  min-width: 400px;
+}
+
+.search input {
+  width: 100%;
+  max-width: 250px;
+  padding: 6px 35px 6px 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+.search button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 160px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #666;
+}
+.login {color: #000;}
+
+.logo { 
+    flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img { 
+  height: 100px;
+  max-width: 100%;
+  
+}
+.tagline { 
+  font-size: 15px; 
+  color: #666; 
+}
+.user-actions { 
+   flex: 1;
+  display: flex;
+  align-items: center;
+justify-content: flex-end;
+  gap: 10px;
+  min-width: 400px;
+ }
+
+/* Nav */
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+.main-nav a {
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+.main-nav a.outlet { color: rgb(224, 163, 50); font-weight: bold; font-size: 20px; }
+
+/* Hero */
+.hero {
+  background: url('img/hero.webp') center/cover no-repeat;
+  color: white;
+  text-align: right;
+  padding: 100px 300px 100px 100px;
+}
+
+.hero-text {
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  padding: 100px 100px 50px 100px;
+}
+
+/* Mobile hero */
+@media (max-width: 600px) {
+  .hero-text {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+}
+
+.hero h1 { 
+  font-size: 30px; 
+  margin-bottom: 20px; 
+}
+.btn.big {
+  padding: 15px 35px;
+  border: 2px solid white;
+  border-radius: 30px;
+  background: transparent;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* Products */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+  align-items: stretch;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #000;
+  text-align: center;
+  padding: 20px;
+  flex: 1 1 250px;
+  max-width: 250px;
+  height: 400px;
+}
+ .product-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+ }
+.product p {
+  margin-bottom: 10px;
+}
+.product img { 
+  height: 200px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 20px; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.btn {
+  display: inline-block;
+  background: #003d3d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+
+}
+.btn:hover { background: #006666; }
+
+/* Newsletter */
+.newsletter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+  background-color: #f3f3f3;
+  flex-wrap: wrap;
+}
+
+.newsletter img {
+  width: 300px;
+  max-width: 100%;
+}
+
+.newsletter-content {
+  max-width: 400px;
+  flex: 1;
+}
+
+.newsletter-content p {
+  margin-bottom: 20px;
+}
+
+.newsletter-content form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.newsletter-content input {
+  flex: 1;
+  padding: 10px;
+  min-width: 200px;
+  border: 1px solid #ccc;
+}
+
+.newsletter-content button {
+  padding: 10px 20px;
+  background-color: #003b3b;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #003b3b;
+  color: white;
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: underline;
+}
