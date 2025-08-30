@@ -135,7 +135,7 @@ details[open] summary {
   background: #eee;
 }
 
-h2 {
+h1 {
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
@@ -153,6 +153,11 @@ h2 {
   gap: 50px;
   padding: 20px 10px;
   align-items: center;
+}
+
+h2 {
+  text-align: center;
+  
 }
 
 
@@ -185,7 +190,7 @@ h2 {
   margin-bottom: 10px;
 }
 .product img { 
-  height: 350px;
+  min-height: 350px;
   width: auto;
   object-fit: contain;
   margin-bottom: 20px; 
